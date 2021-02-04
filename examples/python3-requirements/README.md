@@ -17,7 +17,7 @@ if you change requirements.txt. The final step is very fast and will change on e
 
 ## Build and run
 
-1. Build the image: `docker build . --tag=psutil-example`
+1. Build the image: `DOCKER_BUILDKIT=1 docker build . --tag=psutil-example`
 2. Run it! `docker run --rm psutil-example`
 
 
@@ -26,9 +26,3 @@ if you change requirements.txt. The final step is very fast and will change on e
 ```
 RSS: 13.0 MiB;  SHARED: 5.7 MiB; VIRTUAL: 19.9 MiB
 ```
-
-
-## TODO: Bazel
-
-It would be nice if we could show how to build this container with Bazel, but I don't actually know
-how to do that.
